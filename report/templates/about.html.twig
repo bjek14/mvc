@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+{% block title %}About{% endblock %}
+
+{% block content %}
+
+<h1>About</h1>
+
+<p class="importent">
+Welcome to my awsome homepage.
+<img src="img/film.jpg" width="200px" alt="me">
+</p>
+
+<p><a href="{{ absolute_url("img/film.jpg") }}"> View the image</a></p>
+
+<p>Go to the <a href="{{path("lucky-number") }}">Lucky number JSON</a>.</p>
+
+{% endblock %}
