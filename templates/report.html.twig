@@ -4,15 +4,18 @@
 
 {% block content %}
 
-{% apply markdown_to_html %}
-Report
-======
+<div class="report-text">
+    {% apply markdown_to_html %}
+    Report
+    ======
 
-This is the reports from each kmom.
+    This is the reports from each kmom.
 
-{% endapply %}
+    {% endapply %}
 
 {{ include('report/kmom01.markdown.twig')|markdown_to_html }}
 {{ include('report/kmom02.markdown.twig')|markdown_to_html }}
+
+</div>
 
 {% endblock %}
