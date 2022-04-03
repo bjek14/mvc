@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<h1>HOME</h1>
+
+<p class="importent">
+Welcome to my awsome homepage.
+<img src="img/film.jpg" width="200px" alt="me">
+</p>
+
+<p><a href="{{ absolute_url("img/film.jpg") }}"> View the image</a></p>
+
+{% endblock %}
